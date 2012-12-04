@@ -1,0 +1,7 @@
+.*
+!/.gitignore
+
+bin/
+
+!week1
+!week2
