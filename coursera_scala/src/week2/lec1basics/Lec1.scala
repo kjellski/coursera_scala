@@ -1,4 +1,4 @@
-package week1.lec1basics
+package week2.lec1basics
 
 class Lec1 {
   def sqrt(x: Double) = {
