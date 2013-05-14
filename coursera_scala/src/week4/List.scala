@@ -22,18 +22,3 @@ object Nil extends List[Nothing] {
   def head: Nothing = throw new NoSuchElementException("Nil.head");
   def tail: Nothing = throw new NoSuchElementException("Nil.tail");
 }
-
-object test{
-  
-  val x: List[String] = Nil
-  
-  def f(xs: List[NonEmpty], x: Empty) = xs prepend x
-
-  def nth[T](n: Int, l: List[T]): T =
-    if (l.isEmpty) throw new IndexOutOfBoundsException()
-    else if (n == 0) l.head
-    else nth[T](n - 1, l.tail)
-
-  //nth(0, list)
-
-}

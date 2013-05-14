@@ -4,7 +4,7 @@ object testing {
   val x = new Rational(1,3)                       //> x  : week3.Rational = 1/3
   val y = new Rational(5,7)                       //> y  : week3.Rational = 5/7
   val z = new Rational(3,2)                       //> z  : week3.Rational = 3/2
-  
+   
   x + y                                           //> res0: week3.Rational = 22/21
   -x                                              //> res1: week3.Rational = 1/-3
   
