@@ -1,13 +1,4 @@
-object lecture_3_4 {
-  val testSet = new NonEmpty(5, new NonEmpty(3, new Empty, new Empty), new Empty)
-                                                  //> testSet  : NonEmpty = {{.3.}5.}
-  testSet.incl(4)                                 //> res0: IntSet = {{.3{.4.}}5.}
-  testSet.incl(54)                                //> res1: IntSet = {{.3.}5{.54.}}
-  testSet.incl(1)                                 //> res2: IntSet = {{{.1.}3.}5.}
-  testSet.incl(24)                                //> res3: IntSet = {{.3.}5{.24.}}
-  testSet.incl(123)                               //> res4: IntSet = {{.3.}5{.123.}}
-  
-}
+package week3
 
 abstract class IntSet {
   def incl(x: Int): IntSet
